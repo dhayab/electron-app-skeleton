@@ -1,0 +1,14 @@
+{
+  "name": "electron-app-skeleton",
+  "productName": "Electron App Skeleton",
+  "version": "0.0.1",
+  "description": "An opinionated starting point for Electron app development.",
+  "main": "app.js",
+  "author": {
+    "name": "Dhaya Benmessaoud",
+    "email": "dhaya.benmessaoud@gmail.com"
+  },
+  "homepage": "https://github.com/dhayab",
+  "dependencies": {
+  }
+}

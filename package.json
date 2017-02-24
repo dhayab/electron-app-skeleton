@@ -1,0 +1,41 @@
+{
+  "name": "electron-app-skeleton",
+  "version": "0.0.1",
+  "description": "An opinionated starting point for Electron app development.",
+  "main": "app/app.js",
+  "build": {
+    "appId": "bar.foo.app",
+    "linux": {
+      "target": ["deb"]
+    },
+    "mac": {
+      "target": ["dmg"]
+    },
+    "nsis": {
+      "oneClick": false
+    },
+    "win": {
+      "target": ["nsis"]
+    }
+  },
+  "scripts": {
+    "postinstall": "install-app-deps",
+    "start": "electron ./app",
+    "package": "npm run package:linux && npm run package:mac && npm run package:win",
+    "package:linux": "build --linux",
+    "package:mac": "build --mac",
+    "package:win": "build --win --ia32 --x64"
+  },
+  "keywords": [
+      "electron"
+  ],
+  "author": {
+    "name": "Dhaya Benmessaoud",
+    "email": "dhaya.benmessaoud@gmail.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^1.4.15",
+    "electron-builder": "^14.4.0"
+  }
+}
